@@ -1,0 +1,12 @@
+services:
+  - type: worker
+    name: encar-render-bot
+    env: python
+    plan: starter
+    buildCommand: pip install -r requirements.txt && playwright install --with-deps
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: CHANNEL_ID
+        sync: false

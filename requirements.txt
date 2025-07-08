@@ -1,0 +1,4 @@
+python-dotenv
+aiogram==3.3.0
+playwright==1.44.0
+apscheduler
